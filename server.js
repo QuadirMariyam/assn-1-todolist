@@ -9,7 +9,6 @@ app.use(express.json());
 
 //routes
 app.get('/',(req,res)=> {
-    res.send('Hello NODE API');
 })
 
 //main route
@@ -42,7 +41,6 @@ app.get('/todos', async(req, res) => {
     }
 })
 
-//Find todo - get a specific id - used in Update and Delete Operations
 
 app.get('/todo/:id', async(req, res) => {
     try {
